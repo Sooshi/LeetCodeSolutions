@@ -43,19 +43,6 @@ def leaf_similar(root1, root2)
     leaves_2 == leaves
 end
 
-
-# 1
-# | Linked List
-# | O(n):
-#   O(n) - while current != nil
-# + O(n) - list.delete_at(middle)
-#   Removing an element from an array is difficult O(n) in the worst case, since all subsequent elements of the array after the deleted one are shifted.
-# + O(n) - list.reverse_each do |i|
-# = O(n) + O(n) + O(n) => still O(n)
-# | Runtime: 293ms Beats 8.89%
-# | Memory: 239.58MB Beats 31.11%
-
-
 # 1 
 # | DFS 
 # | O(n):
