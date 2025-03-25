@@ -1,3 +1,4 @@
+-- Table: Products
 -- +-------------+---------+
 -- | Column Name | Type    |
 -- +-------------+---------+
@@ -6,7 +7,7 @@
 -- | recyclable  | enum    |
 -- +-------------+---------+
 
--- Input: 
+-- Input:
 
 -- Products table:
 -- +-------------+----------+------------+
@@ -18,7 +19,9 @@
 -- | 3           | Y        | Y          |
 -- | 4           | N        | N          |
 -- +-------------+----------+------------+
--- Output: 
+
+-- Output:
+
 -- +-------------+
 -- | product_id  |
 -- +-------------+
@@ -26,7 +29,7 @@
 -- | 3           |
 -- +-------------+
 
---           1 
+--   1 
 --   | Runtime: 865ms
 --   | Beats: 68.73%
 SELECT product_id FROM Products WHERE low_fats = 'Y' AND recyclable  = 'Y'
