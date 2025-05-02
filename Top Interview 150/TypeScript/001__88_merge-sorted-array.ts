@@ -38,9 +38,9 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
 // | O(m + n): while
 // | Runtime: 0ms Beats 100.00%
 function merge1(nums1: number[], m: number, nums2: number[], n: number): void {
-    let nums1Pointer = m - 1;
-    let nums2Pointer = n - 1;
-    let insertPointer = m + n - 1;
+    let nums1Pointer: number = m - 1;
+    let nums2Pointer: number = n - 1;
+    let insertPointer: number = m + n - 1;
 
     while (nums2Pointer >= 0) {
         if (nums1[nums1Pointer] > nums2[nums2Pointer]) {
