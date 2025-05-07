@@ -24,7 +24,7 @@ function removeDuplicates_1(nums: number[]): number {
 // | O(n) while, splice (cause nums.splice(i, 1), which removes one element and shifts all remaining elements one position left.)
 // | Runtime: 0ms Beats: 100.00%
 // | Memory: 58.92MB Beats: 53.36%
-function removeDuplicates(nums: number[]): number {
+function removeDuplicates_2(nums: number[]): number {
     let i = 1;
     let j = 1;
 
