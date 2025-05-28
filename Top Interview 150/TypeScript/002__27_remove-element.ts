@@ -12,7 +12,7 @@ function removeElement_1(nums: number[], val: number): number {
         }
     }
 
-    return nums.length
+    return nums.length;
 };
 
 // Same with while
@@ -48,5 +48,5 @@ function removeElement_3(nums: number[], val: number): number {
         }
     }
 
-    return j
+    return j;
 };
