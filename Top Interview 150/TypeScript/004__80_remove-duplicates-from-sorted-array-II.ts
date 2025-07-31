@@ -8,7 +8,7 @@ function removeDuplicates(nums: number[]): number {
   let pointer = 2;
 
   for (let i = 2; i < nums.length; i++) {
-      if (nums[i] != nums[pointer - 2]) {
+      if (nums[i] != nums[pointer - 2]) { // we should to check initial array values with ALREADY sorted part of array! so => nums[i] != nums[pointer - 2]
           nums[pointer] = nums[i]
           pointer++;
       }
