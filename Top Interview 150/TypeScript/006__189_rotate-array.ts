@@ -44,10 +44,9 @@ function reverse(arr: number[], start: number, end: number) {
 // |  Asymptotic complexity: O(k*n):
 //    O(k): while (i < k)
 //    O(n): nums.unshift()
-//  = O(k*n)
-// -> 7, 6, 1, 2, 3, 4, 5 | pointer = 2
-// -> 7, 6, 5, 1, 2, 3, 4 | pointer = 3
-// Not even close, not in-place, just nums = ....
+//  = O(k*n) unshift inside while loop
+// | Memory: 65.54MB Beats: 78.06%
+// |  Spatial complexity: O(1): without using data structures that grow with input
 function rotate_3(nums: number[], k: number): void {
     const length = nums.length;
     k = k % length;
