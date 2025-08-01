@@ -19,7 +19,7 @@ function majorityElement(nums: number[]): number {
   const max = Math.max(...values);
 
   const keys = Object.entries(hashTable);
-  const result = keys.find(([_, val]) => val == max)?.[0];
+  const result = keys.find(([_, val]) => val == max)![0];
 
   return Number(result);
 };
