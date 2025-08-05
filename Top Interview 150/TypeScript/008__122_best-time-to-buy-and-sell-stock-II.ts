@@ -1,5 +1,5 @@
 // 1
-// | 
+// | Greedy algorithm
 // | Runtime: 1ms Beats: 69.08%
 // |  Asymptotic complexity: O(n): for ()
 // | Memory: 56.36MB Beats: 43.50%
