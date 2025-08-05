@@ -59,36 +59,6 @@ function rotate_3(nums: number[], k: number): void {
 };
 
 
-// Wrong Answer nums = [1,2]
-// MORE FASTER
-//  for (let j = 0; j < nums.length; j++) {
-//      nums[j] = newNums[j];
-//  }
-// -> 
-//  newNums.forEach((value, index) => {
-//      nums[index] = value;
-//  });
-//  ->
-//  Object.assign(nums, newNums);
-function rotate_4(nums: number[], k: number): void {
-    let pointer = 1;
-    let newNums = nums;
-    
-    for (let i = 0; i < nums.length; i++) {
-        newNums = [newNums[nums.length - 1], ...newNums.slice(0, nums.length - 1)]
-
-        if (pointer == k) {
-            for (let j = 0; j < nums.length; j++) {
-                nums[j] = newNums[j];
-            }
-
-            return;
-        }
-
-        pointer++;
-    }
-};
-
 // Runtime: 2ms Beats: 67.32%
 // Memory: 65.08MB Beats: 75.59%
 function rotate(nums: number[], k: number): void {
