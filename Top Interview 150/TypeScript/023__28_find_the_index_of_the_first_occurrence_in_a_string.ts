@@ -20,7 +20,6 @@ function strStr_1(haystack: string, needle: string): number {
 // =  O(n + m):  
 // | Memory: 56.28MB Beats: 12.01%
 // |  Spatial complexity: O(m): LPS from needle.length
-
 function strStr_2(haystack: string, needle: string): number {
     const LPS = finding_lps(needle);
 
