@@ -10,7 +10,7 @@ def merge_alternately(word1, word2)
     end
  
     result
- end
+end
 
  # 2 One line
 def merge_alternately(word1, word2)
