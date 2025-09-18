@@ -3,7 +3,7 @@
 // | Runtime: 9ms Beats: 25.60%
 // |  Asymptotic complexity: O(m^2): 
 //    O(m): m = s.length ( == t.length)
-//    O(m): indexOf
+//    O(m): indexOf (This is because indexOf in JavaScript arrays is implemented as a linear search.)
 //    O(m) * O(m) => O(m^2)
 // | Memory: 57.22MB Beats: 41.69%
 // |  Spatial complexity: O(n): t.length
